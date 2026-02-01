@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+env/
+venv/
+dist/
+build/
+
+# Temp files
+.tmp/
+*.log
+.DS_Store
+
+# Local secrets
+.env
+
+# Frontend artifacts
+web_ui/node_modules/
+web_ui/build/
+web_ui/.env
