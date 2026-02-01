@@ -8,17 +8,7 @@ A premium, localized, and intelligent converter designed to transform legacy Sel
 
 The system follows the **A.N.T.** (Architecture, Navigation, Tools) 3-layer methodology to ensure deterministic results from probabilistic models.
 
-```mermaid
-graph TD
-    User((User)) -->|Input Java Code| UI[Premium React UI]
-    UI -->|API Request| Bridge[Express.js Backend Bridge]
-    Bridge -->|Python Exec| Conv[Converter Tool]
-    Conv -->|Prompt Injection| LLM[Ollama / CodeLlama]
-    LLM -->|Converted Code| Conv
-    Conv -->|Refined Output| Bridge
-    Bridge -->|JSON Response| UI
-    UI -->|Syntax Highlighting| Display[Playwright JS/TS Code]
-```
+![Architecture Diagram](assets/architecture_diagram.png)
 
 ---
 
@@ -45,8 +35,8 @@ graph TD
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/roshrv27/proj2_sel_to_playwright_coverter.git
-cd proj2_sel_to_playwright_coverter
+git clone https://github.com/roshrv27/Proj2_sel_to_playwright_coverter.git
+cd Proj2_sel_to_playwright_coverter
 ```
 
 ### 2. Install Dependencies
